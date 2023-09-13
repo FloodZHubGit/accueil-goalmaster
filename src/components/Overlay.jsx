@@ -17,8 +17,10 @@ const textContainerStyle = {
   background: "transparent",
   padding: "16px",
   borderRadius: "8px",
-  color: "green",
+  color: rgb(4, 120, 87),
   fontSize: "50px",
+  marginLeft: props.left ? "16px" : 0,
+  marginRight: props.right ? "16px" : 0,
 };
 
 const Section = (props) => {
@@ -52,9 +54,9 @@ export const Overlay = () => {
     <Scroll html>
       <div className="w-screen">
         <Section top middle>
-          <h1 className="text-center">Bienvenue sur GoalMaster</h1>
+          <h1 className="text-center">Bienvenue sur Goal Master</h1>
         </Section>
-        <Section>
+        <Section left>
           <h1 className="text-center">
             Le site qui transforme votre babyfoot en une expérience interactive
             et ludique
@@ -66,9 +68,8 @@ export const Overlay = () => {
           </h1>
         </Section>
         <Section bottom middle>
-          {/* center */}
           <h1 className="text-center">
-            Rejoignez la communauté Goalmaster et défiez vos amis !
+            Rejoignez la communauté Goal Master et défiez vos amis !
           </h1>
         </Section>
       </div>
