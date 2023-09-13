@@ -17,7 +17,7 @@ const textContainerStyle = {
   background: "transparent",
   padding: "16px",
   borderRadius: "8px",
-  color: "rgb(4, 120, 87)",
+  color: "white",
   fontSize: "50px",
 };
 
