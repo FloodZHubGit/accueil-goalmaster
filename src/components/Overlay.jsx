@@ -17,7 +17,7 @@ const textContainerStyle = {
   background: "transparent",
   padding: "16px",
   borderRadius: "8px",
-  color: rgb(4, 120, 87),
+  color: "rgb(4, 120, 87)",
   fontSize: "50px",
   marginLeft: props.left ? "16px" : 0,
   marginRight: props.right ? "16px" : 0,
