@@ -2,12 +2,13 @@ import "./style.css";
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
+import { Loader } from "@react-three/drei";
+import { Suspense } from "react";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 root.render(
   <>
-    {/* dont show it on small devices */}
     <Canvas
       camera={{
         fov: 45,
@@ -16,7 +17,10 @@ root.render(
         position: [0, 0, 10],
       }}
     >
-      <Experience />
+      <Suspense fallback={null}>
+        <Experience />
+      </Suspense>
     </Canvas>
+    <Loader />
   </>
 );
