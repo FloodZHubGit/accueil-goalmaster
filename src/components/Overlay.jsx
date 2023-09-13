@@ -19,8 +19,6 @@ const textContainerStyle = {
   borderRadius: "8px",
   color: "rgb(4, 120, 87)",
   fontSize: "50px",
-  marginLeft: props.left ? "16px" : 0,
-  marginRight: props.right ? "16px" : 0,
 };
 
 const Section = (props) => {
@@ -36,6 +34,8 @@ const Section = (props) => {
       : "flex-start",
     paddingTop: props.top ? "10vh" : 0,
     paddingBottom: props.bottom ? "10vh" : 0,
+    marginLeft: props.left ? "30px" : 0,
+    marginRight: props.right ? "30px" : 0,
   };
 
   return (
